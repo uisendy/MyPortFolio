@@ -5,10 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-header{
-  background-image: url("/images/header-shapes\ mobile.svg");
-}
-
 a{
   text-decoration: none;
 }
@@ -22,7 +18,7 @@ li{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .logo{
@@ -34,6 +30,37 @@ li{
 
 .logo-dot{
   font-size: 50px;
+}
+
+.hero-container{
+  background-image: url("/images/Hero-Mobile-Background/Ellipse\ 3.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 4.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 5.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 8.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 11.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 12.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 13.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 14.svg"),
+    url("/images/Hero-Mobile-Background/Ellipse\ 15.svg"),
+    url("/images/Hero-Mobile-Background/Rectangle\ 5.svg"),
+    url("/images/Hero-Mobile-Background/Rectangle\ 7.svg");
+
+  background-repeat: no-repeat;
+  background-position: 95% 21.2%,
+    63.2% 91.8%,
+    35.5% 21.6%,
+    57% 15%,
+    4% 22.6%,
+    91% 76.4%,
+    88.6% 75.4%,
+    79.5% 44%,
+    14.1% 90%,
+    51.5% 91.2%,
+    40% 21.1%;
+  height: calc(100vh - 72px);
+  background-color: antiquewhite;
+  position: top 0px right 100%;
+  background-size: auto;
 }
 
 .hero-section{
