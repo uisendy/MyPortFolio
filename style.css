@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  background-image: url("/images/header-shapes\ mobile.svg");
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-bar{
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.logo-dot{
+  font-size: 50px;
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 72px);
+  padding: 50px 24px;
+  gap: 15px;
+}
+
+.intro-msg{
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #172B4D;
+}
+
+.description-msg{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344463;
+}
+
+.hero-section h5 {
+  color: #7F8CFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.hero-section .social-media-icons{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bg-first-section {
+  background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
+  animation-duration: 1s;
+  animation-name: bg-slide;
+}
