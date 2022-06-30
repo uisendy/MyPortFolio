@@ -1,19 +1,19 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.nav-bar{
+.nav-bar {
   height: 72px;
   display: flex;
   align-items: center;
@@ -21,19 +21,20 @@ li{
   padding: 0 1.5rem;
 }
 
-.logo{
+.logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   align-items: center;
 }
 
-.logo-dot{
+.logo-dot {
   font-size: 50px;
 }
 
-.hero-container{
-  background-image: url("/images/Hero-Mobile-Background/Ellipse\ 3.svg"),
+.hero-container {
+  background-image:
+    url("/images/Hero-Mobile-Background/Ellipse\ 3.svg"),
     url("/images/Hero-Mobile-Background/Ellipse\ 4.svg"),
     url("/images/Hero-Mobile-Background/Ellipse\ 5.svg"),
     url("/images/Hero-Mobile-Background/Ellipse\ 8.svg"),
@@ -44,9 +45,9 @@ li{
     url("/images/Hero-Mobile-Background/Ellipse\ 15.svg"),
     url("/images/Hero-Mobile-Background/Rectangle\ 5.svg"),
     url("/images/Hero-Mobile-Background/Rectangle\ 7.svg");
-
   background-repeat: no-repeat;
-  background-position: 95% 21.2%,
+  background-position:
+    95% 21.2%,
     63.2% 91.8%,
     35.5% 21.6%,
     57% 15%,
@@ -59,11 +60,11 @@ li{
     40% 21.1%;
   height: calc(100vh - 72px);
   background-color: antiquewhite;
-  position: top 0px right 100%;
+  position: top 0 right 100%;
   background-size: auto;
 }
 
-.hero-section{
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,14 +74,14 @@ li{
   gap: 15px;
 }
 
-.intro-msg{
+.intro-msg {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
-  color: #172B4D;
+  color: #172b4d;
 }
 
-.description-msg{
+.description-msg {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -88,14 +89,14 @@ li{
 }
 
 .hero-section h5 {
-  color: #7F8CFF;
+  color: #7f8cff;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
 
-.hero-section .social-media-icons{
+.hero-section .social-media-icons {
   display: flex;
   align-items: center;
   gap: 16px;
