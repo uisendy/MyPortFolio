@@ -45,17 +45,17 @@ li {
 
 .hero-container {
   background-image:
-    url("/images/Hero-Mobile-Background/Ellipse\ 3.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 4.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 5.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 8.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 11.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 12.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 13.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 14.svg"),
-    url("/images/Hero-Mobile-Background/Ellipse\ 15.svg"),
-    url("/images/Hero-Mobile-Background/Rectangle\ 5.svg"),
-    url("/images/Hero-Mobile-Background/Rectangle\ 7.svg");
+    url("./images/Hero-Mobile-Background/Ellipse\ 3.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 4.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 5.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 8.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 11.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 12.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 13.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 14.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 15.svg"),
+    url("./images/Hero-Mobile-Background/Rectangle\ 5.svg"),
+    url("./images/Hero-Mobile-Background/Rectangle\ 7.svg");
   background-repeat: no-repeat;
   background-position:
     95% 9.2%,
