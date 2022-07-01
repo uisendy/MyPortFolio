@@ -5,8 +5,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-  background-color: #E5E5E5;
+body {
+  background-color: #e5e5e5;
 }
 
 a {
@@ -31,11 +31,11 @@ li {
   font-size: 18px;
   line-height: 20px;
   align-items: center;
-  color: #6070FF;
+  color: #6070ff;
 }
 
-.logo a{
-  color: #6070FF;
+.logo a {
+  color: #6070ff;
 }
 
 .logo-dot {
@@ -84,7 +84,6 @@ li {
   height: calc(100vh - 72px);
   padding: 50px 24px;
   gap: 15px;
-
 }
 
 .intro-msg {
@@ -116,6 +115,6 @@ li {
 }
 
 .social-media-icon {
-  fill: #6070FF;
+  fill: #6070ff;
   cursor: pointer;
 }
