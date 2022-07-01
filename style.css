@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-bar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background-color: white;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  color: #6070ff;
+}
+
+.logo a {
+  color: #6070ff;
+}
+
+.logo-dot {
+  font-size: 50px;
+  color: rgb(231, 38, 0);
+}
+
+.hero-container {
+  background-image:
+    url("./images/Hero-Mobile-Background/Ellipse\ 3.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 4.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 5.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 8.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 11.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 12.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 13.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 14.svg"),
+    url("./images/Hero-Mobile-Background/Ellipse\ 15.svg"),
+    url("./images/Hero-Mobile-Background/Rectangle\ 5.svg"),
+    url("./images/Hero-Mobile-Background/Rectangle\ 7.svg");
+  background-repeat: no-repeat;
+  background-position:
+    95% 9.2%,
+    63.2% 91.8%,
+    35.5% 9.6%,
+    57% 15%,
+    4% 12.6%,
+    91% 76.4%,
+    88.6% 75.4%,
+    79.5% 44%,
+    14.1% 90%,
+    51.5% 91.2%,
+    40% 9.1%;
+  height: calc(100vh - 72px);
+  position: top 0 right 100%;
+  background-size: auto;
+  background-color: white;
+  border-radius: 0 0 0 15%;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 72px);
+  padding: 50px 24px;
+  gap: 15px;
+}
+
+.intro-msg {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #172b4d;
+}
+
+.description-msg {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344463;
+}
+
+.hero-section h5 {
+  color: #7f8cff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.hero-section .social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-media-icon {
+  fill: #6070ff;
+  cursor: pointer;
+}
