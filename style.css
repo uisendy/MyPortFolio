@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+  background-color: #E5E5E5;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +23,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
+  background-color: white;
 }
 
 .logo {
@@ -26,10 +31,16 @@ li {
   font-size: 18px;
   line-height: 20px;
   align-items: center;
+  color: #6070FF;
+}
+
+.logo a{
+  color: #6070FF;
 }
 
 .logo-dot {
   font-size: 50px;
+  color: rgb(231, 38, 0);
 }
 
 .hero-container {
@@ -47,21 +58,22 @@ li {
     url("/images/Hero-Mobile-Background/Rectangle\ 7.svg");
   background-repeat: no-repeat;
   background-position:
-    95% 21.2%,
+    95% 9.2%,
     63.2% 91.8%,
-    35.5% 21.6%,
+    35.5% 9.6%,
     57% 15%,
-    4% 22.6%,
+    4% 12.6%,
     91% 76.4%,
     88.6% 75.4%,
     79.5% 44%,
     14.1% 90%,
     51.5% 91.2%,
-    40% 21.1%;
+    40% 9.1%;
   height: calc(100vh - 72px);
-  background-color: antiquewhite;
   position: top 0 right 100%;
   background-size: auto;
+  background-color: white;
+  border-radius: 0 0 0 15%;
 }
 
 .hero-section {
@@ -72,6 +84,7 @@ li {
   height: calc(100vh - 72px);
   padding: 50px 24px;
   gap: 15px;
+
 }
 
 .intro-msg {
@@ -102,8 +115,7 @@ li {
   gap: 16px;
 }
 
-.bg-first-section {
-  background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
-  animation-duration: 1s;
-  animation-name: bg-slide;
+.social-media-icon {
+  fill: #6070FF;
+  cursor: pointer;
 }
