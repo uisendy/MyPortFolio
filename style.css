@@ -118,3 +118,130 @@ li {
   fill: #6070ff;
   cursor: pointer;
 }
+
+.social-media-icon:hover {
+  filter: invert(48%) sepia(76%) saturate(4122%) hue-rotate(219deg) brightness(100%) contrast(105%);
+}
+
+.work-container {
+  background-color: #e5e5e5;
+}
+
+.work-container > h2 {
+  display: none;
+}
+
+.work-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+  justify-content: space-evenly;
+  padding: 80px 0;
+}
+
+.work-card {
+  background-color: white;
+  height: 580px;
+  width: 82%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 1.2rem;
+}
+
+.work-snapshot {
+  border-radius: 1rem;
+  max-width: 90%;
+  padding: 20px 0 10px;
+}
+
+.work-snapshot img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.work-details > p {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.work-short-desc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.work-short-desc > .point-name {
+  color: #344563;
+  font-weight: 700;
+}
+
+.work-short-desc > i {
+  font-size: 9px;
+}
+
+.work-categories {
+  display: flex;
+  gap: 5px;
+}
+
+.work-category {
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.work-header {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+}
+
+.project-btn {
+  color: #396df2;
+  background-color: transparent;
+  outline: none;
+  border: solid 1px #396df2;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.project-btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  border-radius: 0.5rem;
+  background-color: #6070ff;
+  color: white;
+}
+
+.project-btn:active {
+  background-color: #2230D2;
+  color: white;
+}
+
+.project-btn:disabled{
+  color: #5E6C84;
+  border: solid 1px #5E6C84;
+}
