@@ -73,7 +73,7 @@ li {
   position: top 0 right 100%;
   background-size: auto;
   background-color: white;
-  border-radius: 0 0 0 15%;
+  border-radius: 0 0 0 8rem;
 }
 
 .hero-section {
@@ -84,6 +84,9 @@ li {
   height: calc(100vh - 72px);
   padding: 50px 24px;
   gap: 15px;
+  min-width: 350px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .intro-msg {
@@ -98,6 +101,7 @@ li {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #344463;
+  max-width: 700px;
 }
 
 .hero-section h5 {
@@ -108,7 +112,7 @@ li {
   line-height: 24px;
 }
 
-.hero-section .social-media-icons {
+.social-media-icons {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -117,4 +121,236 @@ li {
 .social-media-icon {
   fill: #6070ff;
   cursor: pointer;
+}
+
+.social-media-icon:hover {
+  filter: invert(48%) sepia(76%) saturate(4122%) hue-rotate(219deg) brightness(100%) contrast(105%);
+}
+
+.work-container {
+  background-color: #e5e5e5;
+}
+
+.work-container > h2,
+.hidden {
+  display: none;
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+  justify-content: space-evenly;
+  padding: 80px 0;
+}
+
+.work-card {
+  background-color: white;
+  height: 580px;
+  width: 82%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 1.2rem;
+}
+
+.work-snapshot {
+  border-radius: 1rem;
+  max-width: 90%;
+  padding: 20px 0 10px;
+}
+
+.work-snapshot img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.work-details > p {
+  color: #344563;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.work-short-desc {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.work-short-desc > .point-name {
+  color: #344563;
+  font-weight: 700;
+}
+
+.work-short-desc > i {
+  font-size: 9px;
+}
+
+.work-categories {
+  display: flex;
+  gap: 5px;
+}
+
+.work-category {
+  padding: 4px 12px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.work-header {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.project-btn {
+  color: #396df2;
+  background-color: transparent;
+  outline: none;
+  border: solid 1px #396df2;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.project-btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  border-radius: 0.5rem;
+  background-color: #6070ff;
+  color: white;
+}
+
+.project-btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.project-btn:disabled {
+  color: #5e6c84;
+  border: solid 1px #5e6c84;
+}
+
+.about-section {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 0 8rem 0 0;
+}
+
+.about-myself {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 500px;
+  min-width: 300px;
+  gap: 20px;
+  height: 100vh;
+  padding: 0 25px;
+}
+
+.about-section h5 {
+  color: #7f8cff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.skills-set {
+  min-width: 375px;
+  max-width: 750px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.language-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lang-head {
+  display: flex;
+  min-width: 300px;
+  max-width: 530px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 30px 5px;
+}
+
+.lang-head > small,
+.frameworks > small,
+.skills > small {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.frameworks,
+.skills {
+  display: flex;
+  min-width: 330px;
+  max-width: 530px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 15px 5px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.skills-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding: 7px;
+  background-color: #f7f7f9;
+}
+
+.skill img {
+  width: 48px;
+  height: 48px;
+}
+
+.skill > small {
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
