@@ -200,10 +200,9 @@ li {
   font-size: 9px;
 }
 
-.work-categories {
-  display: float;
+/*.work-categories {
   gap: 5px;
-}
+}*/
 
 .work-category {
   padding: 4px 12px;
@@ -214,6 +213,8 @@ li {
   line-height: 18px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  float: left;
+  margin-left: 5px;
 }
 
 .work-header {
