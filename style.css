@@ -201,7 +201,7 @@ li {
 }
 
 .work-categories {
-  display: flex;
+  display: float;
   gap: 5px;
 }
 
