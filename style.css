@@ -354,3 +354,38 @@ li {
   font-size: 15px;
   line-height: 20px;
 }
+
+
+.contact-container {
+  background-image:
+    url("./images/Contact-me-Background/Ellipse\ 3.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 4.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 5.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 8.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 11.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 12.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 13.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 14.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 15.svg"),
+    url("./images/Contact-me-Background/Rectangle\ 5.svg"),
+    url("./images/Contact-me-Background/Rectangle\ 7.svg");
+  background-repeat: no-repeat;
+  background-position:
+    95% 9.2%,
+    63.2% 91.8%,
+    35.5% 9.6%,
+    57% 15%,
+    4% 12.6%,
+    91% 76.4%,
+    88.6% 75.4%,
+    79.5% 44%,
+    14.1% 90%,
+    51.5% 91.2%,
+    40% 9.1%;
+  height: calc(100vh - 72px);
+  position: absolute;
+  top: 4600px;
+  background-size: auto;
+  background-color: #6070FF;
+  border-radius: 8rem 0 0 0;
+}
