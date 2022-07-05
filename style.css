@@ -364,11 +364,7 @@ li {
     url("./images/Contact-me-Background/Ellipse\ 8.svg"),
     url("./images/Contact-me-Background/Ellipse\ 11.svg"),
     url("./images/Contact-me-Background/Ellipse\ 12.svg"),
-    url("./images/Contact-me-Background/Ellipse\ 13.svg"),
-    url("./images/Contact-me-Background/Ellipse\ 14.svg"),
-    url("./images/Contact-me-Background/Ellipse\ 15.svg"),
-    url("./images/Contact-me-Background/Rectangle\ 5.svg"),
-    url("./images/Contact-me-Background/Rectangle\ 7.svg");
+    url("./images/Contact-me-Background/Ellipse\ 13.svg");
   background-repeat: no-repeat;
   background-position:
     95% 9.2%,
@@ -382,10 +378,7 @@ li {
     14.1% 90%,
     51.5% 91.2%,
     40% 9.1%;
-  height: calc(100vh - 72px);
-  position: absolute;
-  top: 4600px;
-  background-size: auto;
+  height: 100vh;
   background-color: #6070FF;
   border-radius: 8rem 0 0 0;
 }
@@ -393,50 +386,59 @@ li {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .contact-header {
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #FFFFFF;
 }
 
 .contact-desp {
 
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
-padding: 0 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+  margin: 0 20px;
 }
 
 .form-list {
-display: flex;
-flex-direction: column;
-gap: 20px;
-padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 340px;
 }
 
 .form-container {
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
 }
 
 #name,#email,#message {
-background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  max-width: 500px;
+  min-width: 340px;
 }
 
 #name,#email {
   height: 48px;
-  width: 100%;
+  
 }
 
 #message {
@@ -447,4 +449,3 @@ border-radius: 8px;
   background-color: white;
   margin: 0;
 }
-
