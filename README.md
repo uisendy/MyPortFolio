@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Si. Port-Folio
 
 > Project Description
 > This project describes my port folio from the design to the completion. It begins with mobile first design with to the desktop version and up to deployment. It is a good project to showcase my skills and knowledge on my learning and researches.
@@ -26,7 +26,7 @@ This code can be used for educational 📘 and code viewing purposed. The copyin
 
 ## Authors
 
-👤 **Author1**
+👤 **Sendy Inieke - Si.**
 
 - GitHub: [@uisendy](https://github.com/uisendy)
 - Twitter: [@SInieke](https://twitter.com/SInieke)
@@ -47,8 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Update info
 
-The last update was the design of the work section and About Myself section of this work.
-More to come. 🚀🚀🚀
+The last update was the design of the Contact-me Section | Rev📅: 05:07:2022 | More to come. 🚀🚀🚀
 
 ## 📝 License
 
