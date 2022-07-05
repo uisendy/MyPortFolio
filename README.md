@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Si. Port-Folio
 
 > Project Description
@@ -43,7 +41,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to Microverseinc is where you Gain skills you need to get hired. Learn Online and connect to life changing opportunities. [Apply today](https://www.microverse.org/?grsf=uv064g)
+- Hat tip to ![](https://img.shields.io/badge/Microverse-blueviolet) is where you Gain skills you need to get hired. Learn Online and connect to life changing opportunities. [Apply today](https://www.microverse.org/?grsf=uv064g)
 
 ## Update info
 
