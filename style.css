@@ -434,6 +434,7 @@ li {
   border-radius: 8px;
   max-width: 500px;
   min-width: 340px;
+  padding: 10px;
 }
 
 #name,
