@@ -389,3 +389,62 @@ li {
   background-color: #6070FF;
   border-radius: 8rem 0 0 0;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-header {
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #FFFFFF;
+}
+
+.contact-desp {
+
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+padding: 0 15px;
+}
+
+.form-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding-bottom: 20px;
+}
+
+.form-container {
+  padding-top: 20px;
+}
+
+#name,#email,#message {
+background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+}
+
+#name,#email {
+  height: 48px;
+  width: 100%;
+}
+
+#message {
+  height: 170px;
+}
+
+.form-container > button {
+  background-color: white;
+  margin: 0;
+}
+
