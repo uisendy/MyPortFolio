@@ -355,7 +355,6 @@ li {
   line-height: 20px;
 }
 
-
 .contact-container {
   background-image:
     url("./images/Contact-me-Background/Ellipse\ 3.svg"),
@@ -379,7 +378,7 @@ li {
     51.5% 91.2%,
     40% 9.1%;
   height: 100vh;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border-radius: 8rem 0 0 0;
 }
 
@@ -399,17 +398,16 @@ li {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .contact-desp {
-
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
   margin: 0 20px;
 }
 
@@ -428,17 +426,19 @@ li {
   gap: 15px;
 }
 
-#name,#email,#message {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+#name,
+#email,
+#message {
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   max-width: 500px;
   min-width: 340px;
 }
 
-#name,#email {
+#name,
+#email {
   height: 48px;
-  
 }
 
 #message {
