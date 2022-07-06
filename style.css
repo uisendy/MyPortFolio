@@ -285,7 +285,7 @@ li {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  padding-bottom: 100px;
 }
 
 .language-skills {
@@ -353,4 +353,104 @@ li {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+}
+
+.contact-container {
+  background-color: white;
+  height: 100vh;
+}
+
+.contact-background {
+  background-image:
+    url("./images/Contact-me-Background/Ellipse\ 3.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 4.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 5.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 8.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 11.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 12.svg"),
+    url("./images/Contact-me-Background/Ellipse\ 13.svg");
+  background-repeat: no-repeat;
+  background-position:
+    95% 9.2%,
+    63.2% 91.8%,
+    35.5% 9.6%,
+    57% 15%,
+    4% 12.6%,
+    91% 76.4%,
+    88.6% 75.4%,
+    79.5% 44%,
+    14.1% 90%,
+    51.5% 91.2%,
+    40% 9.1%;
+  background-color: #6070ff;
+  border-radius: 8rem 0 0 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.contact-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-desp {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin: 0 20px;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 340px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+#name,
+#email,
+#message {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  max-width: 500px;
+  min-width: 340px;
+  padding: 10px;
+}
+
+#name,
+#email {
+  height: 48px;
+}
+
+#message {
+  height: 170px;
+}
+
+.form-container > button {
+  background-color: white;
+  margin: 0;
 }
