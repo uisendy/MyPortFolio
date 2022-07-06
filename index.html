@@ -433,17 +433,18 @@
             <ul class="form-list">
               <li class="form-input">
                 <label for="name" class="hidden">Name</label>
-                <input
+                <input required
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Contact Name"
+                  maxlength="30"
                 />
               </li>
               <li class="form-input">
                 <label for="email" class="hidden">Email</label>
-                <input
-                  type="email"
+                <input required
+                  type="email" 
                   id="email"
                   name="email"
                   placeholder="contact@email.xyz"
@@ -451,10 +452,11 @@
               </li>
               <li class="textarea">
                 <label for="message" class="hidden">Name</label>
-                <textarea
+                <textarea required
                   id="message"
                   name="message"
                   placeholder="Write your Message Here"
+                  maxlength="300"
                 ></textarea>
               </li>
             </ul>
