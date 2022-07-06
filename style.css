@@ -380,6 +380,8 @@ li {
   height: 100vh;
   background-color: #6070ff;
   border-radius: 8rem 0 0 0;
+  position: absolute;
+  top: 4900px;
 }
 
 .contact-form {
