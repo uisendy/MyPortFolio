@@ -18,21 +18,36 @@
     <title>SI - PortFolio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav id="nav-bar" class="nav-bar">
         <div class="logo" id="logo">
           <h2>
             <a href="#">Si<span class="logo-dot">.</span></a>
           </h2>
         </div>
-        <nav class="nav-links">
+
+        <div class="nav-links">
+          <ul class="nav-links-lists">
+            <li class="links">
+              <a href="#work-section" class="link">Portfolio</a>
+            </li>
+            <li class="links">
+              <a href="#about-section" class="link">About</a>
+            </li>
+            <li class="links">
+              <a href="#contact-section" class="link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-links-mobile">
           <img class="menu-icon" src="images/Union.svg" alt="menu-icon" />
-        </nav>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero-container">
+      <section class="hero-container" id="hero-section">
         <div class="hero-section">
           <h1 class="intro-msg">I’m Sendy <br />Glad to see you!</h1>
           <p class="description-msg">
@@ -149,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="work-container">
+      <section class="work-container" id="work-section">
         <h2>projects</h2>
         <div class="work-section">
           <div class="work-card">
@@ -165,7 +180,7 @@
                 <i class="fa-solid fa-circle"></i>
                 <small>2015</small>
               </div>
-              <p>
+              <p class="work-details-des">
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required.
               </p>
@@ -260,18 +275,18 @@
           </div>
         </div>
       </section>
-      <section class="about-container">
+      <section class="about-container" id="about-section">
         <h2 class="hidden">About Myself</h2>
         <div class="about-section">
           <div class="about-myself">
-            <h2 class="intro-msg">About<br />Myself</h2>
-            <p class="description-msg">
+            <h2 class="abt-intro-msg">About<br />Myself</h2>
+            <p class="abt-description-msg">
               I’m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
               hestiate to contact me.
             </p>
-            <h5>LET’S CONNECT</h5>
+            <h3>LET’S CONNECT</h3>
             <div class="social-media">
               <ul class="social-media-icons">
                 <li>
@@ -416,7 +431,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-container">
+      <section class="contact-container" id="contact-section">
         <h2 class="hidden">Contact Me</h2>
         <div class="contact-background">
           <div class="contact-form">

@@ -17,13 +17,23 @@ li {
   list-style: none;
 }
 
+.header {
+  background-color: white;
+}
+
+
 .nav-bar {
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
   background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: none;
 }
 
 .logo {
@@ -82,10 +92,8 @@ li {
   justify-content: center;
   align-items: flex-start;
   height: calc(100vh - 72px);
-  padding: 50px 24px;
   gap: 15px;
-  min-width: 350px;
-  max-width: 80%;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -101,7 +109,7 @@ li {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #344463;
-  max-width: 700px;
+  width: 100%;
 }
 
 .hero-section h5 {
@@ -146,19 +154,20 @@ li {
 
 .work-card {
   background-color: white;
-  height: 580px;
   width: 82%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   border-radius: 1.2rem;
+  min-height: 500px;
 }
 
 .work-snapshot {
   border-radius: 1rem;
   max-width: 90%;
-  padding: 20px 0 10px;
+  margin: 6% auto;
 }
 
 .work-snapshot img {
@@ -172,8 +181,15 @@ li {
   flex-direction: column;
   align-items: flex-start;
   max-width: 90%;
-  justify-content: space-around;
+  justify-content: center;
   gap: 12px;
+}
+
+.work-header {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 .work-details > p {
@@ -181,6 +197,7 @@ li {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  width: 100%;
 }
 
 .work-short-desc {
@@ -216,13 +233,6 @@ li {
   color: #6070ff;
 }
 
-.work-header {
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.25rem;
-}
-
 .project-btn {
   color: #396df2;
   background-color: transparent;
@@ -232,6 +242,9 @@ li {
   border-radius: 0.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .project-btn:hover {
@@ -254,9 +267,10 @@ li {
 .about-section {
   background-color: white;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 0 8rem 0 0;
+  padding-bottom: 50px;
 }
 
 .about-myself {
@@ -264,14 +278,28 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 500px;
-  min-width: 300px;
   gap: 20px;
-  height: 100vh;
-  padding: 0 25px;
+  height: 80vh;
+  width: 86%;
+  margin: 0 auto;
 }
 
-.about-section h5 {
+.abt-intro-msg {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #172b4d;
+}
+
+.abt-description-msg {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344463;
+  width: 100%;
+}
+
+.about-section h3 {
   color: #7f8cff;
   font-size: 1rem;
   font-style: normal;
@@ -280,27 +308,22 @@ li {
 }
 
 .skills-set {
-  min-width: 375px;
-  max-width: 750px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-bottom: 100px;
 }
 
 .language-skills {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 86%;
+  margin: 0 auto;
 }
 
 .lang-head {
   display: flex;
-  min-width: 300px;
-  max-width: 530px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px 30px 5px;
+  padding: 30px 15px 50px 5px;
 }
 
 .lang-head > small,
@@ -314,11 +337,9 @@ li {
 .frameworks,
 .skills {
   display: flex;
-  min-width: 330px;
-  max-width: 530px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px 15px 5px;
+  padding: 30px 15px 30px 5px;
   border-bottom: 1px solid #dfe1e6;
 }
 
@@ -332,6 +353,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 95%;
 }
 
 .skill {
@@ -341,6 +363,7 @@ li {
   gap: 15px;
   padding: 7px;
   background-color: #f7f7f9;
+  height: 70px;
 }
 
 .skill img {
@@ -454,3 +477,192 @@ li {
   background-color: white;
   margin: 0;
 }
+
+@media (min-width: 748px) and (max-width: 3080px){
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links-lists {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    width: 63%;
+    margin: 0 auto;
+  }
+
+  .intro-msg {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: #172b4d;
+  }
+
+  .description-msg {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .work-snapshot {
+    flex-wrap: nowrap;
+  }
+
+
+  .work-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .work-snapshot {
+    max-width: 70%;
+    margin: 20px;
+  }
+
+  .work-details {
+    margin: 0 50px 0 0;
+  }
+
+  .work-header {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  .work-details > p {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+
+  .work-categories {
+    padding-bottom: 20px;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    margin-right: 0;
+  }
+
+  .about-myself{
+    width: 80%;
+    margin: 10% 0 0 20%;
+  }
+
+  .skills-set{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .language-skills {
+    min-width: 330px;
+    margin: 0 0 0 10%;
+    max-width: 75%;
+  }
+
+  .form-container{
+    align-items: center;
+  }
+
+  #name,
+  #email,
+  #message {
+    border-radius: 0;
+  }
+
+
+}
+
+@media (min-width: 1280px){
+  
+}
+
+
+
+/* 
+
+/* .work-snapshot img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .work-details {
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 20px;
+    max-width: 551.76px;
+  }
+
+  .work-details>p{
+    font-size: 16px;
+  }
+
+@media (min-width: 1080px){
+
+  
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links-lists {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    width: 63%;
+    margin: 0 auto;
+  }
+
+  .intro-msg {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: #172b4d;
+  }
+
+  .description-msg {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  /* .work-card {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .work-snapshot {
+    max-width: 70%;
+    margin: 20px;
+  }
+
+  .work-snapshot img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .work-details {
+    margin: 0 50px 0 0;
+  } */
