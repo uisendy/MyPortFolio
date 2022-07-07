@@ -21,7 +21,6 @@ li {
   background-color: white;
 }
 
-
 .nav-bar {
   height: 72px;
   display: flex;
@@ -34,6 +33,17 @@ li {
 
 .nav-links {
   display: none;
+}
+
+.nav-links-lists {
+  display: none;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #344563;
 }
 
 .logo {
@@ -64,11 +74,12 @@ li {
     url("./images/Hero-Mobile-Background/Ellipse\ 13.svg"),
     url("./images/Hero-Mobile-Background/Ellipse\ 14.svg"),
     url("./images/Hero-Mobile-Background/Ellipse\ 15.svg"),
+    url("./images/Hero-Mobile-Background/Rectangle\ 4.svg"),
     url("./images/Hero-Mobile-Background/Rectangle\ 5.svg"),
     url("./images/Hero-Mobile-Background/Rectangle\ 7.svg");
   background-repeat: no-repeat;
   background-position:
-    95% 9.2%,
+    102% 1.5%,
     63.2% 91.8%,
     35.5% 9.6%,
     57% 15%,
@@ -77,11 +88,24 @@ li {
     88.6% 75.4%,
     79.5% 44%,
     14.1% 90%,
+    92% -13%,
     51.5% 91.2%,
     40% 9.1%;
   height: calc(100vh - 72px);
   position: top 0 right 100%;
-  background-size: auto;
+  background-size:
+    30% 30%,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    auto,
+    30% 30%,
+    auto,
+    auto;
   background-color: white;
   border-radius: 0 0 0 8rem;
 }
@@ -387,24 +411,28 @@ li {
   background-image:
     url("./images/Contact-me-Background/Ellipse\ 3.svg"),
     url("./images/Contact-me-Background/Ellipse\ 4.svg"),
-    url("./images/Contact-me-Background/Ellipse\ 5.svg"),
     url("./images/Contact-me-Background/Ellipse\ 8.svg"),
     url("./images/Contact-me-Background/Ellipse\ 11.svg"),
     url("./images/Contact-me-Background/Ellipse\ 12.svg"),
+    url("./images/Contact-me-Background/Rectangle\ 4.svg"),
     url("./images/Contact-me-Background/Ellipse\ 13.svg");
   background-repeat: no-repeat;
   background-position:
-    95% 9.2%,
+    110% 5.2%,
     63.2% 91.8%,
-    35.5% 9.6%,
-    57% 15%,
+    35.5% 4.6%,
     4% 12.6%,
     91% 76.4%,
-    88.6% 75.4%,
-    79.5% 44%,
-    14.1% 90%,
-    51.5% 91.2%,
-    40% 9.1%;
+    90% -2%,
+    14.1% 90%;
+  background-size:
+    20% 20%,
+    auto,
+    auto,
+    auto,
+    auto,
+    120px 70px,
+    auto;
   background-color: #6070ff;
   border-radius: 8rem 0 0 0;
 }
@@ -478,8 +506,7 @@ li {
   margin: 0;
 }
 
-@media (min-width: 748px) and (max-width: 3080px){
-
+@media (min-width: 748px) and (max-width: 3080px) {
   .nav-links-mobile {
     display: none;
   }
@@ -490,12 +517,35 @@ li {
 
   .nav-links-lists {
     display: flex;
-    gap: 30px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    justify-content: center;
-    align-items: center;
+  }
+
+  .hero-container {
+    background-position:
+      96% 12.2%,
+      63.2% 91.8%,
+      35.5% 9.6%,
+      57% 15%,
+      4% 12.6%,
+      91% 76.4%,
+      88.6% 75.4%,
+      79.5% 44%,
+      14.1% 90%,
+      82% -3.5%,
+      51.5% 91.2%,
+      40% 9.1%;
+    background-size:
+      30% 30%,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      auto;
   }
 
   .hero-section {
@@ -515,11 +565,6 @@ li {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  
-  .work-snapshot {
-    flex-wrap: nowrap;
-  }
-
 
   .work-card {
     flex-direction: row;
@@ -529,6 +574,7 @@ li {
   .work-snapshot {
     max-width: 70%;
     margin: 20px;
+    flex-wrap: nowrap;
   }
 
   .work-details {
@@ -555,12 +601,12 @@ li {
     margin-right: 0;
   }
 
-  .about-myself{
+  .about-myself {
     width: 80%;
     margin: 10% 0 0 20%;
   }
 
-  .skills-set{
+  .skills-set {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -571,7 +617,32 @@ li {
     max-width: 75%;
   }
 
-  .form-container{
+  .skills-lists {
+    flex-direction: row;
+    gap: 10px;
+    width: 95%;
+  }
+
+  .skill {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    width: 122px;
+    height: 120px;
+  }
+
+  .contact-background {
+    background-size:
+      auto,
+      auto,
+      auto,
+      auto,
+      auto,
+      200px 100px,
+      auto;
+  }
+
+  .form-container {
     align-items: center;
   }
 
@@ -580,89 +651,4 @@ li {
   #message {
     border-radius: 0;
   }
-
-
 }
-
-@media (min-width: 1280px){
-  
-}
-
-
-
-/* 
-
-/* .work-snapshot img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .work-details {
-    justify-content: flex-start;
-    padding-top: 20px;
-    gap: 20px;
-    max-width: 551.76px;
-  }
-
-  .work-details>p{
-    font-size: 16px;
-  }
-
-@media (min-width: 1080px){
-
-  
-  .nav-links-mobile {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-  }
-
-  .nav-links-lists {
-    display: flex;
-    gap: 30px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-section {
-    width: 63%;
-    margin: 0 auto;
-  }
-
-  .intro-msg {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.75rem;
-    color: #172b4d;
-  }
-
-  .description-msg {
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  /* .work-card {
-    flex-direction: row;
-    gap: 50px;
-  }
-
-  .work-snapshot {
-    max-width: 70%;
-    margin: 20px;
-  }
-
-  .work-snapshot img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .work-details {
-    margin: 0 50px 0 0;
-  } */
