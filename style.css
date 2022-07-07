@@ -572,6 +572,10 @@ li {
     gap: 20px;
   }
 
+  .work-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   .work-snapshot {
     max-width: 70%;
     margin: 20px;
@@ -579,7 +583,7 @@ li {
   }
 
   .work-details {
-    margin: 0 50px 0 0;
+    margin: 0 0 0 50px;
   }
 
   .work-header {
