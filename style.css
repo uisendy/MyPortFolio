@@ -341,6 +341,7 @@ li {
   gap: 15px;
   width: 86%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .lang-head {
