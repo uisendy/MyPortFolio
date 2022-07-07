@@ -8,11 +8,11 @@
 
 ### Mobile version Screenshot:
 
-![screenshot](./image/Screenshot1.png/)
+![screenshot](./images/Mobile.PNG)
 
 ### Desktop version Screenshot:
 
-![screenshot](./images/Mobile.PNG)
+![screenshot](./images/Landing%20Page.PNG)
 
 ### Objective
 
