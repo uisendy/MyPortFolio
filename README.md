@@ -1,7 +1,28 @@
 # Si. Port-Folio
 
-> Project Description
-> This project describes my port folio from the design to the completion. It begins with mobile first design with to the desktop version and up to deployment. It is a good project to showcase my skills and knowledge on my learning and researches.
+> This project objective is to understand how to build a portfolio, which is one of the most powerful tools in our software developer toolbox; it's the simplest way of demonstrating what we're truly capable of as developers, and it's a quick and easy way for recruiters and hiring managers to get an idea of what we can bring to their teams.
+
+## Description
+
+### Mobile version Screenshot:
+
+![screenshot](./image/Screenshot1.png/)
+
+### Desktop version Screenshot:
+
+![screenshot](./images/Mobile.PNG)
+
+### Objective
+
+This project's goals are as follows:
+
+- Learn how to interpret a Figma design to generate a user interface.
+- A flexbox is used to position components on the page.
+- Build a personal responsive portfolio site.
+- Use photos and backdrops to improve the appearance of the website.
+- Use HTML5 validations to build forms.
+- Recognize the significance of user experience.
+- Learn how to use media queries to develop UIs that adapt to different screen sizes.
 
 ## Built With
 
@@ -46,6 +67,8 @@ Give a ⭐️ if you like this project!
 ## Update info
 
 The last update was the design of the Contact-me Section | Rev📅: 05:07:2022 | More to come. 🚀🚀🚀
+
+## Contact me on
 
 ## 📝 License
 
