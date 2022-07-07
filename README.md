@@ -1,4 +1,6 @@
-# Si. Port-Folio ![](https://img.shields.io/badge/Microverse-blueviolet)
+# Si. Port-Folio
+
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 > This project objective is to understand how to build a portfolio, which is one of the most powerful tools in our software developer toolbox; it's the simplest way of demonstrating what we're truly capable of as developers, and it's a quick and easy way for recruiters and hiring managers to get an idea of what we can bring to their teams.
 
