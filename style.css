@@ -65,6 +65,7 @@ li {
 .links:hover::after {
   width: 100%;
 }
+
 .logo {
   font-weight: 700;
   font-size: 18px;
