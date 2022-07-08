@@ -390,6 +390,7 @@ li {
   border-radius: 0.5rem;
   background-color: #6070ff;
   color: white;
+  cursor: pointer;
 }
 
 .project-btn:active {
