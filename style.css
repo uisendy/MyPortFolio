@@ -46,6 +46,12 @@ li {
   color: #344563;
 }
 
+.links {
+  color: #2230d2 !important;
+  position: relative;
+  padding: 10px 0;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -121,11 +127,43 @@ li {
   margin: 0 auto;
 }
 
+.hero-welcome-msg {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .intro-msg {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.25rem;
   color: #172b4d;
+}
+
+.welcome-msg {
+  height: 4rem;
+  line-height: 4rem;
+  overflow: hidden;
+  margin: -1px 0 0 12px;
+}
+
+.msg {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #172b4d;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+.blue {
+  color: #2230d2;
+  text-decoration: underline;
+}
+
+@keyframes slide {
+  100% {
+    top: -255px;
+  }
 }
 
 .description-msg {
@@ -136,7 +174,7 @@ li {
   width: 100%;
 }
 
-.hero-section h5 {
+.hero-section h3 {
   color: #7f8cff;
   font-size: 1rem;
   font-style: normal;
@@ -269,6 +307,7 @@ li {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  transition: all 0.4s ease-in-out;
 }
 
 .project-btn:hover {
