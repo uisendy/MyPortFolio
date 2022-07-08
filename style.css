@@ -52,6 +52,19 @@ li {
   padding: 10px 0;
 }
 
+.links::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  transition: 0.3s;
+  background-color: #2230d2;
+}
+
+.links:hover::after {
+  width: 100%;
+}
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -139,6 +152,10 @@ li {
   color: #172b4d;
 }
 
+.sec-2 {
+  margin-top: -10px;
+}
+
 .welcome-msg {
   height: 4rem;
   line-height: 4rem;
@@ -158,12 +175,6 @@ li {
 .blue {
   color: #2230d2;
   text-decoration: underline;
-}
-
-@keyframes slide {
-  100% {
-    top: -255px;
-  }
 }
 
 .description-msg {
@@ -224,6 +235,70 @@ li {
   justify-content: space-around;
   border-radius: 1.2rem;
   min-height: 500px;
+}
+
+.card-1 {
+  animation: slidein-card-1 2s ease-in-out;
+}
+
+@keyframes slidein-card-1 {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+.card-2 {
+  animation: slidein-card-2 1.7s ease-in-out 0.3s;
+}
+
+@keyframes slidein-card-2 {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+.card-3 {
+  animation: slidein-card-3 1.5s ease-in-out 0.5s;
+}
+
+@keyframes slidein-card-3 {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+.card-4 {
+  animation: slidein-card-4 1.3s ease-in-out 0.7s;
+}
+
+@keyframes slidein-card-4 {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 80%;
+  }
 }
 
 .work-snapshot {
@@ -604,6 +679,12 @@ li {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -255px;
+    }
   }
 
   .work-card {
