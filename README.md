@@ -8,8 +8,7 @@
 
 ## Hosting
 
-This Portfolio is hosted on GitHub Page. ![Click here](https://uisendy.github.io/MyPortFolio/) to View
-https://uisendy.github.io/MyPortFolio/
+This Portfolio is hosted on GitHub Page. ![Click here](https://uisendy.github.io/MyPortFolio/)
 
 ### Mobile version Screenshot:
 
