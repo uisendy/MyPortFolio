@@ -56,8 +56,12 @@ This code can be used for educational 📘 and code viewing purposed. The copyin
 - GitHub: [@uisendy](https://github.com/uisendy)
 - Twitter: [@SInieke](https://twitter.com/SInieke)
 
-## 🤝 Contributing
+## 🤝 Contributor
 
+👤 **Emamnuel Essien**
+
+- GitHub: [@ehma90](https://github.com/ehma90)
+- Twitter: [@ehma_essien](https://twitter.com/ehma_essien)
 Contributions, issues, and feature requests are welcome!
 
 If you find any bug or suggestion for improvement please Feel free to check the [issues page](../../issues/) with your proposed change.
