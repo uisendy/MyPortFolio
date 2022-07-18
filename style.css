@@ -107,7 +107,7 @@ li {
 }
 
 .hamburger-menu.is-active::before {
-  transform: rotate(-45deg) translate(-8.5px,5.5px);
+  transform: rotate(-45deg) translate(-8.5px, 5.5px);
 }
 
 .hamburger-menu.is-active .menu-icon {
