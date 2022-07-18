@@ -273,6 +273,10 @@ li {
   min-height: 500px;
 }
 
+.work-card:hover {
+  cursor: pointer;
+}
+
 .card-1 {
   animation: slidein-card-1 2s ease-in-out;
 }
