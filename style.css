@@ -134,6 +134,7 @@ li {
   backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
   display: flex;
+  transition: 0.5s;
 }
 
 .mobile-nav-links.is-active {
