@@ -50,11 +50,20 @@ const workCards = {
 };
 
 const workSection = document.querySelector('.work-section')
- 
+const workSectionPopup = document.querySelector('.work-section-popup')
+const heroSection = document.querySelector('.hero-container')
+const workContainer = document.querySelector('.work-container')
+const aboutContainer = document.querySelector('.about-container')
+const contactContainer = document.querySelector('.contact-container')
+
+
 Object.keys(workCards).forEach((cards) => {
   if (Object.hasOwnProperty.call(workCards, cards)) {
     const card = workCards[cards];
     console.log(card)
+    function showId(){
+     return card.id; 
+    } 
     workSection.innerHTML += `<div class="work-card card-1">
       <div class="work-snapshot">
         <img src="${card.imgsrc}" alt="Card Images" />
@@ -77,12 +86,57 @@ Object.keys(workCards).forEach((cards) => {
           <li class="work-category">CSS</li>
           <li class="work-category">javaScript</li>
         </ul>
-        <button type="button" class="project-btn">See project</button>
+        <button type="button" class="project-btn popup-btn">See project</button>
       </article>
     </div>`
-  }
+
+          const popupButton = document.querySelectorAll('.popup-btn')
+          popupButton.forEach(popup=>{
+            popup.addEventListener('click', function(){  
+                workContainer.innerHTML = ''
+                aboutContainer.innerHTML = ''
+                contactContainer.innerHTML = ''  
+                workSectionPopup.innerHTML = `
+                <div class="work-section-popup">
+                <div class="work-wrapper">
+                <div class="work-card card-1">
+                  <article class="work-details">
+                    <h3 class="work-header">${card.title}</h3>
+                    <div class="work-short-desc">
+                      <small class="point-name">${card.author}</small>
+                      <i class="fa-solid fa-circle"></i>
+                      <small>${card.devType}</small>
+                      <i class="fa-solid fa-circle"></i>
+                      <small>${card.date}</small>
+                    </div>
+                    <div class="work-snapshot">
+                    <img src="${card.imgsrc}" alt="Card Images" />
+                    </div>
+                    <p class="work-details-des">
+                      ${(card.description)}
+                    </p>
+                    <ul class="work-categories">
+                      <li class="work-category"></li>
+                      <li class="work-category ruby-11">Ruby on Rails</li>
+                      <li class="work-category">CSS</li>
+                      <li class="work-category">javaScript</li>
+                    </ul>
+                    <div class="popup-btn-area">
+                    <button type="button" class="project-btn popup-btn">See Live</button>
+                    <button type="button" class="project-btn popup-btn">See Source</button>
+                    </div>
+                    
+                  </article>
+                </div>
+                </div>
+                </div>`
+              })
+          })
+        }
 })
 
+console.log(workSection)
+  
 const HamburgerMenu = document.querySelector('.hamburger-menu');
 const MobileNav = document.querySelector('.mobile-nav-links');
 const MobileNavLists = document.querySelectorAll('.mobile-links');
