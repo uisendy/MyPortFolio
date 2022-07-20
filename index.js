@@ -1,70 +1,63 @@
+const workSection = document.querySelector('.work-section');
+const workSectionPopup = document.querySelector('.work-section-popup');
+
+
 const workCards = {
   cardOne: {
-    id: 1,
+    id: 0,
     title: 'Tonic',
     author: 'canopy',
     date: 2016,
     devPosition: 'Back End Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imgsrc: "./images/Work-section/tonic-1.png",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    imgsrc: './images/Work-section/Snapshoot-Portfolio.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
     LinkToLiveVer: 'https://github.com/uisendy/MyPortFolio',
   },
   cardTwo: {
-    id: 2,
+    id: 1,
     title: 'Multi-Post Stories',
     author: 'facebook',
     date: 2015,
-    devType: 'Full Stack Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imgsrc: "./images/Work-section/multipost-1.svg",
+    devPosition: 'Full Stack Dev',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    imgsrc: './images/Work-section/Snapshoot-Portfolio-1.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
     LinkToLiveVer: 'https://github.com/uisendy/MyPortFolio',
-  }, 
+  },
   cardThree: {
-    id: 3,
+    id: 2,
     title: 'Facebook 360',
     author: 'facebook',
     date: 2015,
-    devType: 'Full Stack Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imgsrc: "./images/Work-section/tonic-2.svg",
+    devPosition: 'Full Stack Dev',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    imgsrc: './images/Work-section/Snapshoot-Portfolio-2.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
     LinkToLiveVer: 'https://github.com/uisendy/MyPortFolio',
   },
   cardFour: {
-    id: 4,
+    id: 3,
     title: 'Uber Navigation',
     author: 'Uber',
     date: 2016,
-    devType: 'Lead Developer',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imgsrc: "./images/Work-section/multipost-2.svg",
+    devPosition: 'Lead Developer',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    imgsrc: './images/Work-section/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
     LinkToLiveVer: 'https://github.com/uisendy/MyPortFolio',
-  }
+  },
 };
 
-const workSection = document.querySelector('.work-section')
-const workSectionPopup = document.querySelector('.work-section-popup')
-const heroSection = document.querySelector('.hero-container')
-const workContainer = document.querySelector('.work-container')
-const aboutContainer = document.querySelector('.about-container')
-const contactContainer = document.querySelector('.contact-container')
 
-
-Object.keys(workCards).forEach((cards) => {
-  if (Object.hasOwnProperty.call(workCards, cards)) {
-    const card = workCards[cards];
-    console.log(card)
-    function showId(){
-     return card.id; 
-    } 
-    workSection.innerHTML += `<div class="work-card card-1">
+  Object.keys(workCards).forEach((cards) => {
+    if (Object.hasOwnProperty.call(workCards, cards)) {
+       const card = workCards[cards];
+       workSection.innerHTML += `<div class="work-card card-1">
       <div class="work-snapshot">
         <img src="${card.imgsrc}" alt="Card Images" />
       </div>
@@ -73,12 +66,12 @@ Object.keys(workCards).forEach((cards) => {
         <div class="work-short-desc">
           <small class="point-name">${card.author}</small>
           <i class="fa-solid fa-circle"></i>
-          <small>${card.devType}</small>
+          <small>${card.devPosition}</small>
           <i class="fa-solid fa-circle"></i>
           <small>${card.date}</small>
         </div>
         <p class="work-details-des">
-          ${(card.description.length) >= 90 ? (card.description).substring(0,90) + "..." : card.description}
+          ${(card.description.length) >= 90 ? `${(card.description).substring(0, 90)}...` : card.description}
         </p>
         <ul class="work-categories">
           <li class="work-category">HTML</li>
@@ -86,57 +79,94 @@ Object.keys(workCards).forEach((cards) => {
           <li class="work-category">CSS</li>
           <li class="work-category">javaScript</li>
         </ul>
-        <button type="button" class="project-btn popup-btn">See project</button>
+        <a href="" id = "${card.id}" class="project-btn popup-btn">See Project</a>
       </article>
-    </div>`
+    </div>`;
+    }
+  });
 
-          const popupButton = document.querySelectorAll('.popup-btn')
-          popupButton.forEach(popup=>{
-            popup.addEventListener('click', function(){  
-                workContainer.innerHTML = ''
-                aboutContainer.innerHTML = ''
-                contactContainer.innerHTML = ''  
-                workSectionPopup.innerHTML = `
-                <div class="work-section-popup">
+  const popupButton = document.querySelectorAll('.popup-btn');
+  
+  popupButton.forEach(popup => {
+    popup.addEventListener("click" , (e)=> {
+      e.preventDefault()
+      Object.keys(workCards).forEach((cards) => {
+        if (Object.hasOwnProperty.call(workCards, cards)) {
+           const card = workCards[cards];
+           if (card.id == popup.id) {
+            console.log("smile")
+              workSectionPopup.innerHTML = `
+              <div class="work-section-popup">
                 <div class="work-wrapper">
-                <div class="work-card card-1">
-                  <article class="work-details">
+                  <div class="work-card-pop">
+                  <div class = "work-card-pop-close">
+                  <div class = "pop-title">
                     <h3 class="work-header">${card.title}</h3>
                     <div class="work-short-desc">
                       <small class="point-name">${card.author}</small>
                       <i class="fa-solid fa-circle"></i>
-                      <small>${card.devType}</small>
+                      <small>${card.devPosition}</small>
                       <i class="fa-solid fa-circle"></i>
                       <small>${card.date}</small>
                     </div>
-                    <div class="work-snapshot">
-                    <img src="${card.imgsrc}" alt="Card Images" />
-                    </div>
-                    <p class="work-details-des">
-                      ${(card.description)}
-                    </p>
-                    <ul class="work-categories">
-                      <li class="work-category"></li>
-                      <li class="work-category ruby-11">Ruby on Rails</li>
-                      <li class="work-category">CSS</li>
-                      <li class="work-category">javaScript</li>
-                    </ul>
-                    <div class="popup-btn-area">
-                    <button type="button" class="project-btn popup-btn">See Live</button>
-                    <button type="button" class="project-btn popup-btn">See Source</button>
-                    </div>
-                    
-                  </article>
+                  </div>
+                  &times;
+                  </div>
+                    <article class="work-details-pop">
+                      <div class="work-snapshot-pop">
+                      <img src="${card.imgsrc}" alt="Card Images" />
+                      </div>
+                      <div class ="pop-large">
+                        <p class="work-details-des">
+                        ${(card.description)}
+                        </p>
+                        <div class = "pop-large-lhs">
+                          <ul class="work-categories work-cat-pop">
+                            <li class="work-category">html</li>
+                            <li class="work-category ruby-11">Ruby on Rails</li>
+                            <li class="work-category">CSS</li>
+                            <li class="work-category">javaScript</li>
+                          </ul>
+                          <div class="popup-btn-area">
+                            <a href="" class="project-btn popup-btn">See Source</a>
+                            <a href="" class="project-btn popup-btn">See Live</a>
+                          </div>
+                      </div>
+                      </div>
+                      
+                    </article>
+                  </div>
                 </div>
-                </div>
-                </div>`
-              })
-          })
-        }
-})
+              </div>`;
 
-console.log(workSection)
+              const popUpScreen = document.querySelector('.work-section-popup')
+              const closePopupBtn = document.querySelector('.work-card-pop-close')
+                closePopupBtn.addEventListener('click', () => {
+                  popUpScreen.innerHTML = ''
+                });
+              
+
+           }
+
+        }
+      })
+    })
+    
+  });
+
   
+  
+  
+
+
+
+
+
+
+
+
+
+
 const HamburgerMenu = document.querySelector('.hamburger-menu');
 const MobileNav = document.querySelector('.mobile-nav-links');
 const MobileNavLists = document.querySelectorAll('.mobile-links');
@@ -152,3 +182,5 @@ MobileNavLists.forEach((link) => {
     MobileNav.classList.toggle('is-active');
   });
 });
+
+
