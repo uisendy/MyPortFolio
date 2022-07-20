@@ -248,8 +248,7 @@ li {
   font-weight: 700;
   color: #172b4d;
   top: 0;
-  animation: slide 12s steps(4) infinite;
-  
+  animation: slide 12s steps(4) infinite; 
 }
 
 .blue {
@@ -391,6 +390,10 @@ li {
   color: #6070ff;
 }
 
+.times{
+  cursor: pointer;
+}
+
 .ruby-1,
 .ruby-11 {
   display: none;
@@ -405,6 +408,7 @@ li {
   border-radius: 0.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
+  display: flex;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -427,6 +431,11 @@ li {
 .project-btn:disabled {
   color: #5e6c84;
   border: solid 1px #5e6c84;
+}
+
+.imgSrc {
+  width: 20px;
+  height: 20px;
 }
 
 .work-section-popup.close-popup{
@@ -509,6 +518,7 @@ li {
 }
 .popup-btn{
   margin: 0;
+  display: flex;
 }
 
 .about-section {
@@ -752,8 +762,6 @@ li {
     margin: 0;
   }
 
-
-
   .pop-large-lhs{
     display: flex;
     flex-direction: column;
@@ -761,7 +769,6 @@ li {
     align-items: center;
     justify-content: flex-start;
   }
-
 }
 
 @media (min-width: 748px) {
@@ -931,5 +938,4 @@ li {
   #message {
     border-radius: 0;
   }
-}
 }

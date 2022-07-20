@@ -110,7 +110,7 @@ const workCards = {
                       <small>${card.date}</small>
                     </div>
                   </div>
-                  &times;
+                 <div class="times"> &times; </div>
                   </div>
                     <article class="work-details-pop">
                       <div class="work-snapshot-pop">
@@ -128,8 +128,8 @@ const workCards = {
                             <li class="work-category">javaScript</li>
                           </ul>
                           <div class="popup-btn-area">
-                            <a href="" class="project-btn popup-btn">See Source</a>
-                            <a href="" class="project-btn popup-btn">See Live</a>
+                            <a href="https://github.com/uisendy/MyPortFolio" class="project-btn popup-btn">See Source <img class="imgSrc" src="./images/Icon -GitHub.png"/> </a>
+                            <a href="https://uisendy.github.io/MyPortFolio/" class="project-btn popup-btn">See Live <img class="imgSrc" src="./images/Icon - Export.png"/></a>
                           </div>
                       </div>
                       </div>
