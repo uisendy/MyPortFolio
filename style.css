@@ -20,6 +20,8 @@ li {
 
 .header {
   background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-bar {
@@ -132,7 +134,6 @@ li {
   background-color: rgba(18, 36, 200, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  mix-blend-mode: multiply;
   display: flex;
   transition: 0.5s;
 }
@@ -187,7 +188,7 @@ li {
     92% -13%,
     51.5% 91.2%,
     40% 9.1%;
-  height: calc(100vh - 72px);
+  height: 100vh;
   position: top 0 right 100%;
   background-size:
     30% 30%,
@@ -211,7 +212,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: calc(100vh - 72px);
+  height: 100vh;
   gap: 15px;
   width: 88%;
   margin: 0 auto;
@@ -238,6 +239,7 @@ li {
   line-height: 4rem;
   overflow: hidden;
   margin: -1px 0 0 12px;
+  display: none;
 }
 
 .msg {
@@ -247,6 +249,7 @@ li {
   color: #172b4d;
   top: 0;
   animation: slide 12s steps(4) infinite;
+  
 }
 
 .blue {
@@ -312,74 +315,11 @@ li {
   justify-content: space-around;
   border-radius: 1.2rem;
   min-height: 500px;
+  padding-bottom: 30px;
 }
 
 .work-card:hover {
   cursor: pointer;
-}
-
-.card-1 {
-  animation: slidein-card-1 2s ease-in-out;
-}
-
-@keyframes slidein-card-1 {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 10%;
-    width: 80%;
-  }
-}
-
-.card-2 {
-  animation: slidein-card-2 1.7s ease-in-out 0.3s;
-}
-
-@keyframes slidein-card-2 {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 10%;
-    width: 80%;
-  }
-}
-
-.card-3 {
-  animation: slidein-card-3 1.5s ease-in-out 0.5s;
-}
-
-@keyframes slidein-card-3 {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 10%;
-    width: 80%;
-  }
-}
-
-.card-4 {
-  animation: slidein-card-4 1.3s ease-in-out 0.7s;
-}
-
-@keyframes slidein-card-4 {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-
-  to {
-    margin-left: 10%;
-    width: 80%;
-  }
 }
 
 .work-snapshot {
@@ -487,6 +427,88 @@ li {
 .project-btn:disabled {
   color: #5e6c84;
   border: solid 1px #5e6c84;
+}
+
+.work-section-popup.close-popup{
+  display: none;
+}
+
+.work-wrapper{
+  background: rgb(193, 199, 208, 0.7);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.work-card-pop {
+  background-color: rgb(255, 255, 255);
+  width: 82%;
+  margin: auto auto;
+  border-radius: 1.2rem;
+  min-height: 500px;
+  min-height: 70%;
+  height: 95%;
+}
+
+.work-card-pop-close {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 5% 0 7%;
+}
+
+.work-details-pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 87%;
+  height: 87%;
+}
+
+.pop-large{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 10%;
+}
+
+.pop-large > p{
+  font-size: 13px;
+}
+
+.popup-btn-area{
+  display: flex;
+  justify-content: center;
+  width: 97%;
+  gap: 20px;
+  padding-top: 30px;
+  margin: 20px auto 0;
+  border-top: #f2f2f2 solid 0.5px;
+}
+
+.work-snapshot-pop {
+  border-radius: 1rem;
+  width: 100%;
+  margin: 6% auto;
+  height: 40%;
+}
+
+.work-snapshot-pop img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.popup-btn{
+  margin: 0;
 }
 
 .about-section {
@@ -708,7 +730,41 @@ li {
   margin: 0;
 }
 
-@media (min-width: 748px) and (max-width: 3080px) {
+@media (min-width: 960px) {
+
+  .work-snapshot-pop {
+    border-radius: 1rem;
+    margin: 0 auto 20px;
+    min-width: 100%;
+    height: 70%;
+  }
+
+  .work-details-des{
+    width: 60%;
+  }
+
+  .pop-large{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-btn-area{
+    margin: 0;
+  }
+
+
+
+  .pop-large-lhs{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+}
+
+@media (min-width: 748px) {
   .hamburger-menu {
     display: none;
   }
@@ -766,6 +822,14 @@ li {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .intro-msg-span{
+    display: none;
+  }
+
+  .welcome-msg{
+    display: inline;
   }
 
   @keyframes slide {
@@ -867,4 +931,5 @@ li {
   #message {
     border-radius: 0;
   }
+}
 }
