@@ -1,7 +1,6 @@
 const workSection = document.querySelector('.work-section');
 const workSectionPopup = document.querySelector('.work-section-popup');
 
-
 const workCards = {
   cardOne: {
     id: 0,
@@ -53,11 +52,10 @@ const workCards = {
   },
 };
 
-
-  Object.keys(workCards).forEach((cards) => {
-    if (Object.hasOwnProperty.call(workCards, cards)) {
-       const card = workCards[cards];
-       workSection.innerHTML += `<div class="work-card card-1">
+Object.keys(workCards).forEach((cards) => {
+  if (Object.hasOwnProperty.call(workCards, cards)) {
+    const card = workCards[cards];
+    workSection.innerHTML += `<div class="work-card card-1">
       <div class="work-snapshot">
         <img src="${card.imgsrc}" alt="Card Images" />
       </div>
@@ -82,20 +80,19 @@ const workCards = {
         <a href="" id = "${card.id}" class="project-btn popup-btn">See Project</a>
       </article>
     </div>`;
-    }
-  });
+  }
+});
 
-  const popupButton = document.querySelectorAll('.popup-btn');
-  
-  popupButton.forEach(popup => {
-    popup.addEventListener("click" , (e)=> {
-      e.preventDefault()
-      Object.keys(workCards).forEach((cards) => {
-        if (Object.hasOwnProperty.call(workCards, cards)) {
-           const card = workCards[cards];
-           if (card.id == popup.id) {
-            console.log("smile")
-              workSectionPopup.innerHTML = `
+const popupButton = document.querySelectorAll('.popup-btn');
+
+popupButton.forEach((popup) => {
+  popup.addEventListener('click', (e) => {
+    e.preventDefault();
+    Object.keys(workCards).forEach((cards) => {
+      if (Object.hasOwnProperty.call(workCards, cards)) {
+        const card = workCards[cards];
+        if (card.id.toString() === popup.id.toString()) {
+          workSectionPopup.innerHTML = `
               <div class="work-section-popup">
                 <div class="work-wrapper">
                   <div class="work-card-pop">
@@ -139,33 +136,16 @@ const workCards = {
                 </div>
               </div>`;
 
-              const popUpScreen = document.querySelector('.work-section-popup')
-              const closePopupBtn = document.querySelector('.work-card-pop-close')
-                closePopupBtn.addEventListener('click', () => {
-                  popUpScreen.innerHTML = ''
-                });
-              
-
-           }
-
+          const popUpScreen = document.querySelector('.work-section-popup');
+          const closePopupBtn = document.querySelector('.work-card-pop-close');
+          closePopupBtn.addEventListener('click', () => {
+            popUpScreen.innerHTML = '';
+          });
         }
-      })
-    })
-    
+      }
+    });
   });
-
-  
-  
-  
-
-
-
-
-
-
-
-
-
+});
 
 const HamburgerMenu = document.querySelector('.hamburger-menu');
 const MobileNav = document.querySelector('.mobile-nav-links');
@@ -182,5 +162,3 @@ MobileNavLists.forEach((link) => {
     MobileNav.classList.toggle('is-active');
   });
 });
-
-
