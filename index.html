@@ -365,40 +365,54 @@
               class="form-container"
               action="https://formspree.io/f/xknylovq"
               method="POST"
+              novalidate
             >
-              <ul class="form-list">
-                <li class="form-input">
-                  <label for="name" class="hidden">Name</label>
-                  <input
-                    required
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Contact Name"
-                    maxlength="30"
-                  />
-                </li>
-                <li class="form-input">
-                  <label for="email" class="hidden">Email</label>
-                  <input
-                    required
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="contact@email.xyz"
-                  />
-                </li>
-                <li class="textarea">
-                  <label for="message" class="hidden">Name</label>
-                  <textarea
-                    required
-                    id="message"
-                    name="message"
-                    placeholder="Write your Message Here"
-                    maxlength="500"
-                  ></textarea>
-                </li>
-              </ul>
+              <div class="form-input">
+                <label for="name" class="hidden">Name</label>
+                <i class="invalid-icon fa-solid fa-circle-exclamation"></i>
+                <i class="valid-icon fa-solid fa-circle-check"></i>
+                <input
+                  required
+                  type="text"
+                  id="name"
+                  class="name"
+                  name="name"
+                  placeholder="Contact Name"
+                  maxlength="30"
+                />
+                <small class="name-error"></small>
+              </div>
+
+              <div class="form-input">
+                <label for="email" class="hidden">Email</label>
+                <i class="invalid-icon fa-solid fa-circle-exclamation"></i>
+                <i class="valid-icon fa-solid fa-circle-check"></i>
+                <input
+                  required
+                  type="email"
+                  id="email"
+                  class="email"
+                  name="email"
+                  placeholder="contact@email.xyz"
+                />
+                <small class="email-error"></small>
+              </div>
+
+              <div class="form-input">
+                <label for="message" class="hidden">Name</label>
+                <i class="invalid-icon fa-solid fa-circle-exclamation"></i>
+                <i class="valid-icon fa-solid fa-circle-check"></i>
+                <textarea
+                  required
+                  id="message"
+                  name="message"
+                  class="message"
+                  placeholder="Write your Message Here"
+                  maxlength="500"
+                ></textarea>
+                <small class="textarea-error"></small>
+              </div>
+
               <button class="project-btn" type="submit">Get in Touch</button>
             </form>
           </div>

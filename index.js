@@ -147,6 +147,7 @@ popupButton.forEach((popup) => {
   });
 });
 
+
 const HamburgerMenu = document.querySelector('.hamburger-menu');
 const MobileNav = document.querySelector('.mobile-nav-links');
 const MobileNavLists = document.querySelectorAll('.mobile-links');
@@ -161,4 +162,68 @@ MobileNavLists.forEach((link) => {
     HamburgerMenu.classList.toggle('is-active');
     MobileNav.classList.toggle('is-active');
   });
+});
+
+
+// form Validation
+const form = document.querySelector(".form-container");
+const nameErrorMsg = "! Please enter your name";
+const emailErrorMsg = "! Please enter your email";
+const invalidEmailMsg = "! Please enter a correct email address format";
+const textErrorMsg = "! Please write a brief Message"
+const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+const showMessage = (input , text , type) => {
+  const alert = input.parentNode.querySelector("small");
+  console.log()
+  alert.innerText = text
+  type ? input.classList.add("valid"): false
+  return type
+}
+
+function showInvalid(input, text) {
+	return showMessage(input, text, false);
+}
+
+function showValid(input) {
+	return showMessage(input, "", true);
+}
+
+function hasValue(input, text) {
+	if (input.value.trim() === "") {
+		return showInvalid(input, text);
+	}
+	return showValid(input);
+}
+
+function emailCheck(input, requiredMsg, invalidMsg) {
+
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showInvalid(input, invalidMsg);
+	}
+	return true;
+
+}
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	let nameValid = hasValue(form.elements["name"], nameErrorMsg);
+	let emailValid = emailCheck(form.elements["email"], emailErrorMsg, invalidEmailMsg);
+  let textValid = hasValue(form.elements["message"], textErrorMsg);
+
+	if (nameValid && emailValid && textValid) {
+    form.elements["name"].value = ''
+    form.elements["email"].value = ''
+    form.elements["message"].value = ''
+    clearFormInput(form);
+    
+	}
+
+
+
 });

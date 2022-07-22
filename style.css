@@ -717,32 +717,86 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 15px;
+  align-items: flex-start;
+  width: 80%;
 }
 
-#name,
-#email,
-#message {
+.message {
+  height: 130px;
+  min-width: 80%;
+  padding-top: 5px;
+}
+
+.name,
+.email,
+.message {
+  border: none;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  max-width: 500px;
-  min-width: 340px;
-  padding: 10px;
+  width: 100%;
+  min-width: 300px;
+  padding-inline: 8px 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#name,
-#email {
+.name,
+.email {
   height: 48px;
 }
 
-#message {
-  height: 170px;
+.name.invalid,
+.email.invalid,
+.message.invalid {
+  border: 1px solid red;
+}
+
+.name.valid,
+.email.valid,
+.message.valid {
+  border: 1px solid green;
+}
+
+.name.invalid:focus,
+.email.invalid:focus,
+.message.invalid:focus {
+  outline: red;
+}
+
+.name.valid:focus,
+.email.valid:focus,
+.message.valid:focus {
+  outline: green;
+}
+
+
+.valid-icon, .invalid-icon {
+  position: relative;
+  top: 25px;
+  left: 93%;
+  display: none;
+}
+
+.valid-icon.is-active {
+  color: green;
+  display: inline;
+}
+
+.invalid-icon.is-active{
+  color: red;
+  display: inline;
 }
 
 .form-container > button {
   background-color: white;
   margin: 0;
+}
+
+.name-error, .email-error, .textarea-error{
+  padding: 0 5px 10px;
+  color:#cfd8dc;
+  font-size: small;
 }
 
 @media (min-width: 800px) and (min-height: 750px) {
@@ -1010,4 +1064,6 @@ li {
   #message {
     border-radius: 0;
   }
+
+  
 }
