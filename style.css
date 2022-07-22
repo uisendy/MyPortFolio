@@ -795,8 +795,20 @@ li {
 .email-error,
 .textarea-error {
   padding: 0 5px 10px;
-  color: #cfd8dc;
+  color: #f9a792;
   font-size: small;
+}
+
+.validate-status{
+  color: white;
+}
+
+.validate-status.success{
+  color: white;
+}
+
+.validate-status.error{
+  color: #f9a792;
 }
 
 @media (min-width: 800px) and (min-height: 750px) {
