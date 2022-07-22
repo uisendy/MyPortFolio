@@ -172,7 +172,7 @@ const nameErrorMsg = '! Please enter your name';
 const emailErrorMsg = '! Please enter your email';
 const invalidEmailMsg = '! Please enter a correct email address format';
 const textErrorMsg = '! Please write a brief Message';
-const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRegex = /^^[a-z0-9_\-.]+@([a-z0-9-_]+\.)+[a-z0-9-]{2,4}$/g;
 
 const showMessage = (input, text, type) => {
   const alert = input.parentNode.querySelector('small');
