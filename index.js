@@ -209,6 +209,43 @@ function emailCheck(input, requiredMsg, invalidMsg) {
 	return true;
 
 }
+function iconCheck(e, name, max) {
+  if (name === "email"){
+    if (e.target.name === name ){
+      if (emailRegex.test(e.target.value.trim()) && e.target.value.length < max) {
+        e.target.parentNode.querySelector(".valid-icon").classList.add("is-active") ;
+        e.target.parentNode.querySelector(".invalid-icon").classList.remove("is-active")
+      } else { 
+        e.target.parentNode.querySelector(".invalid-icon").classList.add("is-active");
+        e.target.parentNode.querySelector(".valid-icon").classList.remove("is-active");
+      }
+    }
+  }else {
+    if (e.target.name === name ){
+      if (e.target.value && e.target.value.length < max) {
+        e.target.parentNode.querySelector(".valid-icon").classList.add("is-active") ;
+        e.target.parentNode.querySelector(".invalid-icon").classList.remove("is-active")
+      } else { 
+        e.target.parentNode.querySelector(".invalid-icon").classList.add("is-active");
+        e.target.parentNode.querySelector(".valid-icon").classList.remove("is-active");
+      }
+    }
+  }
+}
+
+function clearFormInput(element) {
+  let elementsArray = [...element.parentNode.querySelectorAll("i")]
+  elementsArray.forEach(element => {
+    element.classList.remove("is-active")
+  });
+}
+
+form.addEventListener("input", (e) => {
+  iconCheck(e, "name", 30);
+  iconCheck(e, "email", 30);
+  iconCheck(e, "message", 500);
+})
+
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
