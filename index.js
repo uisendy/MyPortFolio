@@ -147,7 +147,6 @@ popupButton.forEach((popup) => {
   });
 });
 
-
 const HamburgerMenu = document.querySelector('.hamburger-menu');
 const MobileNav = document.querySelector('.mobile-nav-links');
 const MobileNavLists = document.querySelectorAll('.mobile-links');
@@ -164,103 +163,91 @@ MobileNavLists.forEach((link) => {
   });
 });
 
-
 // form Validation
-const form = document.querySelector(".form-container");
-const nameErrorMsg = "! Please enter your name";
-const emailErrorMsg = "! Please enter your email";
-const invalidEmailMsg = "! Please enter a correct email address format";
-const textErrorMsg = "! Please write a brief Message"
-const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const form = document.querySelector('.form-container');
+const nameErrorMsg = '! Please enter your name';
+const emailErrorMsg = '! Please enter your email';
+const invalidEmailMsg = '! Please enter a correct email address format';
+const textErrorMsg = '! Please write a brief Message';
+const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const showMessage = (input , text , type) => {
-  const alert = input.parentNode.querySelector("small");
-  console.log()
-  alert.innerText = text
-  type ? input.classList.add("valid"): false
-  return type
-}
+const showMessage = (input, text, type) => {
+  const alert = input.parentNode.querySelector('small');
+  alert.innerText = text;
+  return type;
+};
 
 function showInvalid(input, text) {
-	return showMessage(input, text, false);
+  return showMessage(input, text, false);
 }
 
 function showValid(input) {
-	return showMessage(input, "", true);
+  return showMessage(input, '', true);
 }
 
 function hasValue(input, text) {
-	if (input.value.trim() === "") {
-		return showInvalid(input, text);
-	}
-	return showValid(input);
+  if (input.value.trim() === '') {
+    return showInvalid(input, text);
+  }
+  return showValid(input);
 }
 
 function emailCheck(input, requiredMsg, invalidMsg) {
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
 
-	if (!hasValue(input, requiredMsg)) {
-		return false;
-	}
-
-	const email = input.value.trim();
-	if (!emailRegex.test(email)) {
-		return showInvalid(input, invalidMsg);
-	}
-	return true;
-
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showInvalid(input, invalidMsg);
+  }
+  return true;
 }
 function iconCheck(e, name, max) {
-  if (name === "email"){
-    if (e.target.name === name ){
+  if (name === 'email') {
+    if (e.target.name === name) {
       if (emailRegex.test(e.target.value.trim()) && e.target.value.length < max) {
-        e.target.parentNode.querySelector(".valid-icon").classList.add("is-active") ;
-        e.target.parentNode.querySelector(".invalid-icon").classList.remove("is-active")
-      } else { 
-        e.target.parentNode.querySelector(".invalid-icon").classList.add("is-active");
-        e.target.parentNode.querySelector(".valid-icon").classList.remove("is-active");
+        e.target.parentNode.querySelector('.valid-icon').classList.add('is-active');
+        e.target.parentNode.querySelector('.invalid-icon').classList.remove('is-active');
+      } else {
+        e.target.parentNode.querySelector('.invalid-icon').classList.add('is-active');
+        e.target.parentNode.querySelector('.valid-icon').classList.remove('is-active');
       }
     }
-  }else {
-    if (e.target.name === name ){
-      if (e.target.value && e.target.value.length < max) {
-        e.target.parentNode.querySelector(".valid-icon").classList.add("is-active") ;
-        e.target.parentNode.querySelector(".invalid-icon").classList.remove("is-active")
-      } else { 
-        e.target.parentNode.querySelector(".invalid-icon").classList.add("is-active");
-        e.target.parentNode.querySelector(".valid-icon").classList.remove("is-active");
-      }
+  } else if (e.target.name === name) {
+    if (e.target.value && e.target.value.length < max) {
+      e.target.parentNode.querySelector('.valid-icon').classList.add('is-active');
+      e.target.parentNode.querySelector('.invalid-icon').classList.remove('is-active');
+    } else {
+      e.target.parentNode.querySelector('.invalid-icon').classList.add('is-active');
+      e.target.parentNode.querySelector('.valid-icon').classList.remove('is-active');
     }
   }
 }
 
 function clearFormInput(element) {
-  let elementsArray = [...element.parentNode.querySelectorAll("i")]
-  elementsArray.forEach(element => {
-    element.classList.remove("is-active")
+  const elementsArray = [...element.parentNode.querySelectorAll('i')];
+  elementsArray.forEach((element) => {
+    element.classList.remove('is-active');
   });
 }
 
-form.addEventListener("input", (e) => {
-  iconCheck(e, "name", 30);
-  iconCheck(e, "email", 30);
-  iconCheck(e, "message", 500);
-})
+form.addEventListener('input', (e) => {
+  iconCheck(e, 'name', 30);
+  iconCheck(e, 'email', 30);
+  iconCheck(e, 'message', 500);
+});
 
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nameValid = hasValue(form.elements.name, nameErrorMsg);
+  const emailValid = emailCheck(form.elements.email, emailErrorMsg, invalidEmailMsg);
+  const textValid = hasValue(form.elements.message, textErrorMsg);
 
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
-	let nameValid = hasValue(form.elements["name"], nameErrorMsg);
-	let emailValid = emailCheck(form.elements["email"], emailErrorMsg, invalidEmailMsg);
-  let textValid = hasValue(form.elements["message"], textErrorMsg);
-
-	if (nameValid && emailValid && textValid) {
-    form.elements["name"].value = ''
-    form.elements["email"].value = ''
-    form.elements["message"].value = ''
+  if (nameValid && emailValid && textValid) {
+    form.elements.name.value = '';
+    form.elements.email.value = '';
+    form.elements.message.value = '';
     clearFormInput(form);
-    
-	}
-
-
-
+  }
 });
