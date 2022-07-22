@@ -166,8 +166,8 @@ MobileNavLists.forEach((link) => {
 // form Validation
 const form = document.querySelector('.form-container');
 const statusMsg = document.querySelector('.validate-status');
-const successMsg = "Validation Successful"
-const errorMsg = "Validation Uncessful: Check for errors"
+const successMsg = 'Validation Successful';
+const errorMsg = 'Validation Uncessful: Check for errors';
 const nameErrorMsg = '! Please enter your name';
 const emailErrorMsg = '! Please enter your email';
 const invalidEmailMsg = '! Please enter a correct email address format';
@@ -224,7 +224,6 @@ function iconCheck(e, name, max) {
     } else {
       e.target.parentNode.querySelector('.invalid-icon').classList.add('is-active');
       e.target.parentNode.querySelector('.valid-icon').classList.remove('is-active');
-
     }
   }
 }
@@ -253,13 +252,12 @@ form.addEventListener('submit', (e) => {
     form.elements.email.value = '';
     form.elements.message.value = '';
     clearFormInput(form);
-    statusMsg.classList.add('success')
+    statusMsg.classList.add('success');
     statusMsg.innerText = successMsg;
-    statusMsg.classList.remove('error')
-
+    statusMsg.classList.remove('error');
   } else {
-    statusMsg.classList.add('error')
+    statusMsg.classList.add('error');
     statusMsg.innerText = errorMsg;
-    statusMsg.classList.remove('success')
+    statusMsg.classList.remove('success');
   }
 });

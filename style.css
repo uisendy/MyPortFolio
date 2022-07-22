@@ -799,15 +799,15 @@ li {
   font-size: small;
 }
 
-.validate-status{
+.validate-status {
   color: white;
 }
 
-.validate-status.success{
+.validate-status.success {
   color: white;
 }
 
-.validate-status.error{
+.validate-status.error {
   color: #f9a792;
 }
 
