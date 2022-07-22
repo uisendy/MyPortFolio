@@ -8,7 +8,7 @@ const workCards = {
     author: 'canopy',
     date: 2016,
     devPosition: 'Back End Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     imgsrc: './images/Work-section/Snapshoot-Portfolio.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
@@ -20,7 +20,7 @@ const workCards = {
     author: 'facebook',
     date: 2015,
     devPosition: 'Full Stack Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     imgsrc: './images/Work-section/Snapshoot-Portfolio-1.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
@@ -32,7 +32,7 @@ const workCards = {
     author: 'facebook',
     date: 2015,
     devPosition: 'Full Stack Dev',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     imgsrc: './images/Work-section/Snapshoot-Portfolio-2.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
@@ -44,7 +44,7 @@ const workCards = {
     author: 'Uber',
     date: 2016,
     devPosition: 'Lead Developer',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     imgsrc: './images/Work-section/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css', 'javascript', 'ruby', 'bootstrap', 'github'],
     linkToSource: 'https://uisendy.github.io/MyPortFolio/',
@@ -97,17 +97,17 @@ popupButton.forEach((popup) => {
                 <div class="work-wrapper">
                   <div class="work-card-pop">
                   <div class = "work-card-pop-close">
-                  <div class = "pop-title">
-                    <h3 class="work-header">${card.title}</h3>
-                    <div class="work-short-desc">
-                      <small class="point-name">${card.author}</small>
-                      <i class="fa-solid fa-circle"></i>
-                      <small>${card.devPosition}</small>
-                      <i class="fa-solid fa-circle"></i>
-                      <small>${card.date}</small>
+                    <div class = "pop-title">
+                      <h3 class="work-header">${card.title}</h3>
+                      <div class="work-short-desc">
+                        <small class="point-name">${card.author}</small>
+                        <i class="fa-solid fa-circle"></i>
+                        <small>${card.devPosition}</small>
+                        <i class="fa-solid fa-circle"></i>
+                        <small>${card.date}</small>
+                      </div>
                     </div>
-                  </div>
-                 <div class="times"> &times; </div>
+                    <div class="times"> <i class="fa-solid fa-xmark"></i> </div>
                   </div>
                     <article class="work-details-pop">
                       <div class="work-snapshot-pop">

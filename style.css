@@ -392,6 +392,9 @@ li {
 
 .times {
   cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
 }
 
 .ruby-1,
@@ -410,8 +413,8 @@ li {
   margin-bottom: 30px;
   display: flex;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -456,20 +459,21 @@ li {
 
 .work-card-pop {
   background-color: rgb(255, 255, 255);
-  width: 82%;
+  width: 90%;
   margin: auto auto;
   border-radius: 1.2rem;
   min-height: 500px;
   min-height: 70%;
-  height: 95%;
+  height: 97%;
 }
 
 .work-card-pop-close {
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 5% 0 7%;
+  align-items: flex-start;
+  padding: 10% 5% 0 3%;
+  position: relative;
 }
 
 .work-details-pop {
@@ -478,7 +482,7 @@ li {
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0 auto;
-  width: 87%;
+  width: 95%;
   height: 87%;
 }
 
@@ -490,7 +494,7 @@ li {
 }
 
 .pop-large > p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .popup-btn-area {
@@ -498,7 +502,7 @@ li {
   justify-content: center;
   width: 97%;
   gap: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
   margin: 20px auto 0;
   border-top: #f2f2f2 solid 0.5px;
 }
@@ -507,7 +511,8 @@ li {
   border-radius: 1rem;
   width: 100%;
   margin: 6% auto;
-  height: 40%;
+  max-height: 35%;
+  overflow: hidden;
 }
 
 .work-snapshot-pop img {
@@ -740,12 +745,80 @@ li {
   margin: 0;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) and (min-height: 750px) {
   .work-snapshot-pop {
     border-radius: 1rem;
     margin: 0 auto 20px;
     min-width: 100%;
     height: 70%;
+  }
+
+  .work-details-des {
+    width: 60%;
+  }
+
+  .pop-large {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-btn-area {
+    margin: 0;
+  }
+
+  .pop-large-lhs {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .work-card-pop-close {
+    padding: 3% 5% 0 7%;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 300px) {
+  .work-card-pop-close {
+    padding: 3% 5% 0 7%;
+  }
+}
+
+@media (min-width: 700px) and (min-height: 1000px) {
+  .work-card-pop-close {
+    padding: 3% 5% 0 7%;
+  }
+
+  .work-card-pop {
+    height: auto;
+  }
+
+  .work-snapshot-pop {
+    border-radius: 1rem;
+    width: 100%;
+    margin: 6% auto;
+    height: 60%;
+  }
+}
+
+@media (min-width: 200px) and (min-height: 740px) {
+  .work-card-pop {
+    height: auto;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 500px) {
+  .work-card-pop {
+    height: 90%;
+  }
+
+  .work-snapshot-pop {
+    border-radius: 1rem;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 70%;
+    max-height: none;
   }
 
   .work-details-des {
