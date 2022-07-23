@@ -173,6 +173,9 @@ const emailErrorMsg = '! Please enter your email';
 const invalidEmailMsg = '! Please enter a correct email address format';
 const textErrorMsg = '! Please write a brief Message';
 const emailRegex = /^^[a-z0-9_\-.]+@([a-z0-9-_]+\.)+[a-z0-9-]{2,4}$/g;
+let contactFormData = []
+fillFormFromStorage()
+
 
 const showMessage = (input, text, type) => {
   const alert = input.parentNode.querySelector('small');
@@ -235,6 +238,21 @@ function clearFormInput(element) {
   });
 }
 
+
+function storeToLS() {
+  let data = {
+    name: form.elements.name.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  }
+  let retrievedData = getFromLS()
+  if (retrievedData) {
+    contactFormData.push(retrievedData)
+  }
+  contactFormData.push(data);
+  localStorage.setItem("contactData", JSON.stringify(contactFormData));
+}
+
 form.addEventListener('input', (e) => {
   iconCheck(e, 'name', 30);
   iconCheck(e, 'email', 30);
@@ -248,6 +266,7 @@ form.addEventListener('submit', (e) => {
   const textValid = hasValue(form.elements.message, textErrorMsg);
 
   if (nameValid && emailValid && textValid) {
+    storeToLS();
     form.elements.name.value = '';
     form.elements.email.value = '';
     form.elements.message.value = '';
