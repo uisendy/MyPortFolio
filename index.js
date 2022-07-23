@@ -173,9 +173,7 @@ const emailErrorMsg = '! Please enter your email';
 const invalidEmailMsg = '! Please enter a correct email address format';
 const textErrorMsg = '! Please write a brief Message';
 const emailRegex = /^^[a-z0-9_\-.]+@([a-z0-9-_]+\.)+[a-z0-9-]{2,4}$/g;
-let contactFormData = []
-fillFormFromStorage()
-
+const contactFormData = [];
 
 const showMessage = (input, text, type) => {
   const alert = input.parentNode.querySelector('small');
@@ -237,34 +235,35 @@ function clearFormInput(element) {
     element.classList.remove('is-active');
   });
 }
-
-
-function storeToLS() {
-  let data = {
-    name: form.elements.name.value,
-    email: form.elements.email.value,
-    message: form.elements.message.value,
-  }
-  let retrievedData = getFromLS()
-  if (retrievedData) {
-    contactFormData.push(retrievedData)
-  }
-  contactFormData.push(data);
-  localStorage.setItem("contactData", JSON.stringify(contactFormData));
-}
-
 function getFromLS() {
-  let retrievedData = JSON.parse(localStorage.getItem("contactData"))
-  return retrievedData
+  const retrievedData = JSON.parse(localStorage.getItem('contactData'));
+  return retrievedData;
 }
 
 function fillFormFromStorage() {
-  let retrievedData = getFromLS()
-  if (retrievedData){
+  const retrievedData = getFromLS();
+  if (retrievedData) {
     form.elements.name.value = retrievedData[0].name;
     form.elements.email.value = retrievedData[0].email;
     form.elements.message.value = retrievedData[0].message;
   }
+}
+
+fillFormFromStorage();
+
+function storeToLS() {
+  const retrievedData = getFromLS();
+  if (retrievedData) {
+    contactFormData.concat(retrievedData);
+  }
+
+  const data = {
+    name: form.elements.name.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  };
+  contactFormData.unshift(data);
+  localStorage.setItem('contactData', JSON.stringify(contactFormData));
 }
 
 form.addEventListener('input', (e) => {
