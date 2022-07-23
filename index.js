@@ -253,6 +253,20 @@ function storeToLS() {
   localStorage.setItem("contactData", JSON.stringify(contactFormData));
 }
 
+function getFromLS() {
+  let retrievedData = JSON.parse(localStorage.getItem("contactData"))
+  return retrievedData
+}
+
+function fillFormFromStorage() {
+  let retrievedData = getFromLS()
+  if (retrievedData){
+    form.elements.name.value = retrievedData[0].name;
+    form.elements.email.value = retrievedData[0].email;
+    form.elements.message.value = retrievedData[0].message;
+  }
+}
+
 form.addEventListener('input', (e) => {
   iconCheck(e, 'name', 30);
   iconCheck(e, 'email', 30);
